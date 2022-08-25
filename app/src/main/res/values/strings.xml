@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShowMania</string>
+    <string name="retry">Retry</string>
+    <string name="show_list">Shows</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="schedule_title">Schedule</string>
+    <string name="season_number">%1$d Season</string>
+</resources>

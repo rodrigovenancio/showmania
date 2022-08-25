@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/beta/heineken" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beta/wtm-android-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beta/wtm-android-app_GITHUB" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/datalbus-vizoor-driver-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/flutter/pindriverapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kontrollix-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kontrollix-logistica-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/msdkui-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/picolotorio" vcs="Git" />
+  </component>
+</project>
