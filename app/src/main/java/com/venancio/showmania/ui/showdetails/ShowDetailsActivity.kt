@@ -6,9 +6,11 @@ import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.paging.LoadState
 import androidx.paging.PagingData
+import com.google.gson.Gson
 import com.venancio.showmania.*
 import com.venancio.showmania.common.FooterAdapter
 import com.venancio.showmania.data.model.EpisodeModel
+import com.venancio.showmania.databinding.ActivityShowDetailsBinding
 import com.venancio.showmania.databinding.ActivityShowIndexBinding
 import com.venancio.showmania.util.ext.collect
 import com.venancio.showmania.util.ext.collectLast
@@ -20,7 +22,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class ShowDetailsActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityShowIndexBinding
+    private lateinit var binding: ActivityShowDetailsBinding
     private lateinit var episode: EpisodeModel
 //    private val viewModel: ShowIndexViewModel by viewModels()
 
@@ -43,7 +45,8 @@ class ShowDetailsActivity : AppCompatActivity() {
 
     private fun handleExtras() {
         intent.extras?.let { extras ->
-           this.episode = extras.getString(EXTRA_SHOW) as EpisodeModel
+            val episodeJson = extras.getString(EXTRA_SHOW)
+            this.episode = Gson().fromJson(episodeJson, EpisodeModel::class.java)
         }
     }
 
